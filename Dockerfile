@@ -1,7 +1,7 @@
 FROM tutum/ubuntu:trusty
 MAINTAINER Wyatt
 #download old version
-
+RUN sudo apt-get install unzip
 RUN cd /root
 
 RUN wget https://github.com/zyqf/DNS/archive/1.2.zip
