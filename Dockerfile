@@ -16,7 +16,7 @@ RUN cd DNS
 
 #Start install
 
-RUN python /root/DNS/install.py
+RUN sudo python /root/DNS/install.py
 #Update RPZ record
 
-RUN python /root/DNS/bin/update.py
+RUN sudo python /root/DNS/bin/update.py
