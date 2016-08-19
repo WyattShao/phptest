@@ -12,7 +12,6 @@ RUN unzip 1.2.zip
 
 RUN mv DNS-1.2 DNS
 WORKDIR /DNS
-RUN cd DNS
 
 #Start install
 
@@ -20,3 +19,4 @@ RUN sudo python install.py
 #Update RPZ record
 
 RUN sudo python /root/DNS/bin/update.py
+EXPOSE 53
